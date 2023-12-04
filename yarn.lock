@@ -112,7 +112,7 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.19.8.tgz#c8285183dbdb17008578dbacb6e22748709b4822"
   integrity sha512-bfZ0cQ1uZs2PqpulNL5j/3w+GDhP36k1K5c38QdQg+Swy51jFZWWeIkteNsufkQxp986wnqRRsb/bHbY1WQ7TA==
 
-"@hotwired/stimulus@^3.2.2":
+"@hotwired/stimulus@^3.0.1", "@hotwired/stimulus@^3.2.2":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@hotwired/stimulus/-/stimulus-3.2.2.tgz#071aab59c600fed95b97939e605ff261a4251608"
   integrity sha512-eGeIqNOQpXoPAIP7tC1+1Yc1yl1xnwYqg+3mzqxyrbE5pg5YFBZcA6YoTiByJB6DKAEsiWtl6tjTJS4IYtbB7A==
@@ -435,6 +435,11 @@ has-flag@^3.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
   integrity sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==
 
+hotkeys-js@^3.8.7:
+  version "3.12.2"
+  resolved "https://registry.yarnpkg.com/hotkeys-js/-/hotkeys-js-3.12.2.tgz#45112d792aac8f95a37dba2c0f4c6a0d40698e5f"
+  integrity sha512-Fi1g0SaDMJZosXLQzs7pbFj2T9VTwvJWx0e4dURXJqa9ERhd4q9fj3XXzgKQgyEnULZh88aQl5fiMv/vxzrEBQ==
+
 "idiomorph@https://github.com/basecamp/idiomorph#rollout-build":
   version "0.0.8"
   resolved "https://github.com/basecamp/idiomorph#e906820368e4c9c52489a3336b8c3826b1bf6de5"
@@ -723,6 +728,14 @@ slash@^5.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
+
+stimulus-hotkeys@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/stimulus-hotkeys/-/stimulus-hotkeys-2.3.0.tgz#95e5c25cc47ca4eaa82a65831d57dae8cc97640a"
+  integrity sha512-oDQu7yrrEAsu3ohFAI1E7hNMIn/4IGLtGlyRoAds0Q3JO509Ua0MhoQkBYl0ZdVOMOKTZchjjIDhT2pNUaZHWQ==
+  dependencies:
+    "@hotwired/stimulus" "^3.0.1"
+    hotkeys-js "^3.8.7"
 
 string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"

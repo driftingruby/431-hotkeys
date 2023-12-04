@@ -1,2 +1,96 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<%= tag :div,
+  "data-controller": "hotkeys ping",
+  "data-hotkeys-bindings-value": { "ctrl+k": "ping#pong" }.to_json %>
+
+<div class="container mt-5">
+  <div class="row gx-2 gy-2 my-1">
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"esc": "press-key#toggle"}'>esc</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F1": "press-key#toggle"}'>F1</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F2": "press-key#toggle"}'>F2</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F3": "press-key#toggle"}'>F3</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F4": "press-key#toggle"}'>F4</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F5": "press-key#toggle"}'>F5</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F6": "press-key#toggle"}'>F6</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F7": "press-key#toggle"}'>F7</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F8": "press-key#toggle"}'>F8</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F9": "press-key#toggle"}'>F9</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F10": "press-key#toggle"}'>F10</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F11": "press-key#toggle"}'>F11</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F12": "press-key#toggle"}'>F12</button></div>
+  </div>
+
+  <div class="row gx-2 gy-2 my-1">
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"`": "press-key#toggle"}'>`</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"1": "press-key#toggle"}'><small>!</small><br>1</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"2": "press-key#toggle"}'><small>@</small><br>2</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"3": "press-key#toggle"}'><small>#</small><br>3</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"4": "press-key#toggle"}'><small>$</small><br>4</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"5": "press-key#toggle"}'><small>%</small><br>5</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"6": "press-key#toggle"}'><small>^</small><br>6</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"7": "press-key#toggle"}'><small>&</small><br>7</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"8": "press-key#toggle"}'><small>*</small><br>8</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"9": "press-key#toggle"}'><small>(</small><br>9</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"0": "press-key#toggle"}'><small>)</small><br>0</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"-": "press-key#toggle"}'><small>_</small><br>-</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-1" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"=": "press-key#toggle"}'><small>+</small><br>=</button></div>
+    <div class="col-2"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"backspace": "press-key#toggle"}'>back</button></div>
+  </div>
+
+  <div class="row gx-2 gy-2 my-1">
+    <div class="col-1"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"tab": "press-key#toggle"}'>tab</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"Q": "press-key#toggle"}'>Q</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"W": "press-key#toggle"}'>W</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"E": "press-key#toggle"}'>E</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"R": "press-key#toggle"}'>R</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"T": "press-key#toggle"}'>T</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"Y": "press-key#toggle"}'>Y</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"U": "press-key#toggle"}'>U</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"I": "press-key#toggle"}'>I</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"O": "press-key#toggle"}'>O</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"P": "press-key#toggle"}'>P</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"[": "press-key#toggle"}'>[</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"]": "press-key#toggle"}'>]</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"\\": "press-key#toggle"}'>\</button></div>
+  </div>
+
+  <div class="row gx-2 gy-2 my-1">
+    <div class="col-1"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"capslock": "press-key#toggle"}'>caps</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"A": "press-key#toggle"}'>A</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"S": "press-key#toggle"}'>S</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"D": "press-key#toggle"}'>D</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"F": "press-key#toggle"}'>F</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"G": "press-key#toggle"}'>G</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"H": "press-key#toggle"}'>H</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"J": "press-key#toggle"}'>J</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"K": "press-key#toggle"}'>K</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"L": "press-key#toggle"}'>L</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{";": "press-key#toggle"}'>;</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value="<%= { "'": "press-key#toggle" }.to_json %>">'</button></div>
+    <div class="col-2"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"return": "press-key#toggle"}'>enter</button></div>
+  </div>
+
+  <div class="row gx-2 gy-2 my-1">
+    <div class="col-2"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"shift": "press-key#toggle"}'>shift</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"Z": "press-key#toggle"}'>Z</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"X": "press-key#toggle"}'>X</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"C": "press-key#toggle"}'>C</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"V": "press-key#toggle"}'>V</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"B": "press-key#toggle"}'>B</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"N": "press-key#toggle"}'>N</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"M": "press-key#toggle"}'>M</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{",": "press-key#toggle"}'>,</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{".": "press-key#toggle"}'>.</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"/": "press-key#toggle"}'>/</button></div>
+    <div class="col-2"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"shift": "press-key#toggle"}'>shift</button></div>
+  </div>
+
+  <div class="row gx-2 gy-2 my-1">
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"ctrl": "press-key#toggle"}'>ctrl</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"alt": "press-key#toggle"}'>alt</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"cmd": "press-key#toggle"}'>cmd</button></div>
+    <div class="col-4"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"space": "press-key#toggle"}'>space</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"cmd": "press-key#toggle"}'>cmd</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"alt": "press-key#toggle"}'>alt</button></div>
+    <div class="col"><button class="btn btn-secondary w-100 py-3" data-controller="hotkeys press-key" data-hotkeys-bindings-value='{"ctrl": "press-key#toggle"}'>ctrl</button></div>
+  </div>
+</div>

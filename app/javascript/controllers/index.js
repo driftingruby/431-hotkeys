@@ -6,3 +6,9 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import PingController from "./ping_controller"
+application.register("ping", PingController)
+
+import PressKeyController from "./press_key_controller"
+application.register("press-key", PressKeyController)
